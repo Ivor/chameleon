@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
+  <absolute><%= @data[:absolute] || "false" %></absolute>
   <item>
     <value><%= @data[:value] %></value>
     <text><%= @data[:display] %></text>
   </item>
   <item>
     <value><%= @data[:previous] %></value>
-    <text></text>
+    <text><%= @data[:previous_display] %></text>
   </item>
 </root>
